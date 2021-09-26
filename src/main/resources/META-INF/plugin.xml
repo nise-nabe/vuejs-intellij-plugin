@@ -1,11 +1,7 @@
 <idea-plugin>
     <id>com.nisecoder.intellij.nuxtjs-intellij-plugin</id>
-    <name>NuxtJS Intellij Plugin</name>
+    <name>NuxtJS</name>
     <vendor email="nise.nabe@gmail.com" url="https://www.nisecoder.com">nise_nabe</vendor>
-
-    <description><![CDATA[
-    NuxtJS Intellij Plugin
-    ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
