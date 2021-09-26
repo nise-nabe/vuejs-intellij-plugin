@@ -19,6 +19,9 @@ intellij {
     version.set("2021.2.2")
 }
 tasks {
+    runIde {
+        autoReloadPlugins.set(true)
+    }
     patchPluginXml {
         changeNotes.set("""
             Add change notes here.<br>
