@@ -1,6 +1,11 @@
+import com.nisecoder.gradle.plugin.idea.ext.packagePrefix
+import com.nisecoder.gradle.plugin.idea.ext.settings
+
 plugins {
-    kotlin("jvm") version "1.5.31"
-    id("org.jetbrains.intellij") version "1.1.6"
+    kotlin("jvm")
+    id("org.jetbrains.intellij")
+    id("org.jetbrains.gradle.plugin.idea-ext")
+    id("com.nisecoder.idea-ext-ext")
 }
 
 group = "com.nisecoder.intellij"
@@ -14,6 +19,13 @@ dependencies {
     implementation(kotlin("stdlib"))
 }
 
+idea {
+    module {
+        settings {
+            packagePrefix["src/main/kotlin"]
+        }
+    }
+}
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version.set("2021.2.2")
