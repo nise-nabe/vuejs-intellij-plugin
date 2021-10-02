@@ -31,6 +31,10 @@ idea {
 intellij {
     version.set("2021.2.2")
     type.set("IU")
+    plugins.set(listOf(
+        "JavaScriptLanguage",
+        "JavaScriptDebugger"
+    ))
 }
 
 tasks {
