@@ -34,7 +34,8 @@ intellij {
     downloadSources.set(true)
     plugins.set(listOf(
         "JavaScriptLanguage",
-        "JavaScriptDebugger"
+        "JavaScriptDebugger",
+        "org.jetbrains.plugins.vue:212.5284.22"
     ))
 }
 
