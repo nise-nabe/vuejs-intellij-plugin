@@ -26,11 +26,13 @@ idea {
         }
     }
 }
+
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version.set("2021.2.2")
     type.set("IU")
 }
+
 tasks {
     runIde {
         autoReloadPlugins.set(true)
