@@ -31,6 +31,7 @@ idea {
 intellij {
     version.set("2021.2.2")
     type.set("IU")
+    downloadSources.set(true)
     plugins.set(listOf(
         "JavaScriptLanguage",
         "JavaScriptDebugger"
