@@ -4,8 +4,6 @@ import com.intellij.ide.actions.CreateDirectoryCompletionContributor
 import com.intellij.ide.actions.CreateDirectoryCompletionContributor.Variant
 import com.intellij.psi.PsiDirectory
 import com.nisecoder.intellij.plugins.nuxtjs.jps.NuxtJSRootType
-import org.jetbrains.jps.model.java.JavaResourceRootType
-import org.jetbrains.jps.model.java.JavaSourceRootType
 
 class NuxtJSDirectoryCompletionContributor: CreateDirectoryCompletionContributor {
     override fun getDescription(): String {
