@@ -24,8 +24,8 @@ class NuxtJSCliProjectGenerator: NpmPackageProjectGenerator() {
 
     override fun packageName(): String = PACKAGE_NAME
 
-    override fun presentablePackageName(): String =
-        NuxtJSBundle.message("nuxtjs.project.generator.presentable.package.name")
+    override fun presentablePackageName(): String
+            = NuxtJSBundle.message("nuxtjs.project.generator.presentable.package.name")
 
     override fun getNpxCommands(): MutableList<NpxPackageDescriptor.NpxCommand>
             = mutableListOf(NpxPackageDescriptor.NpxCommand(PACKAGE_NAME, NUXT_EXECUTABLE))
