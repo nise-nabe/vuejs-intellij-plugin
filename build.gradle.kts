@@ -22,7 +22,7 @@ dependencies {
 idea {
     module {
         settings {
-            packagePrefix["src/main/kotlin"] = "com.nisecoder.intellij"
+            packagePrefix["src/main/kotlin"] = "com.nisecoder.intellij.plugins.nuxtjs"
         }
     }
 }
