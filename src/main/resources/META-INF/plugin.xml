@@ -3,12 +3,14 @@
     <name>NuxtJS</name>
     <vendor email="nise.nabe@gmail.com" url="https://www.nisecoder.com">nise_nabe</vendor>
 
-    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
-         on how to target different products -->
-    <depends>com.intellij.modules.platform</depends>
+    <dependencies>
+        <plugin id="JavaScript" />
+    </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
         <createDirectoryCompletionContributor implementation="com.nisecoder.intellij.plugins.nuxtjs.NuxtJSDirectoryCompletionContributor"/>
+        <directoryProjectGenerator implementation="com.nisecoder.intellij.plugins.nuxtjs.cli.NuxtJSCliProjectGenerator" />
+        <projectTemplatesFactory implementation="com.nisecoder.intellij.plugins.nuxtjs.cli.NuxtJSProjectTemplateFactory" />
     </extensions>
 
     <actions>
