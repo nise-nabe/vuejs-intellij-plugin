@@ -1,5 +1,6 @@
 package com.nisecoder.intellij.plugins.nuxtjs.cli
 
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.intellij.execution.filters.Filter
 import com.intellij.lang.javascript.boilerplate.NpmPackageProjectGenerator
 import com.intellij.lang.javascript.boilerplate.NpxPackageDescriptor
@@ -7,11 +8,13 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.roots.ContentEntry
 import com.intellij.openapi.vfs.VirtualFile
 import com.nisecoder.intellij.plugins.nuxtjs.NuxtJSBundle
+import com.nisecoder.intellij.plugins.nuxtjs.cna.Answers
 
 class NuxtJSCliProjectGenerator: NpmPackageProjectGenerator() {
     companion object {
         const val PACKAGE_NAME = "create-nuxt-app"
         const val NUXT_EXECUTABLE = "create-nuxt-app"
+        private val objectMapper = jacksonObjectMapper()
     }
 
     override fun getName(): String = NuxtJSBundle.message("nuxtjs.project.generator.name")
@@ -30,6 +33,11 @@ class NuxtJSCliProjectGenerator: NpmPackageProjectGenerator() {
     override fun getNpxCommands(): MutableList<NpxPackageDescriptor.NpxCommand>
             = mutableListOf(NpxPackageDescriptor.NpxCommand(PACKAGE_NAME, NUXT_EXECUTABLE))
 
-    override fun generatorArgs(project: Project, baseDir: VirtualFile): Array<String>
-            = arrayOf("--overwrite-dir")
+
+    override fun generatorArgs(project: Project, dir: VirtualFile, settings: Settings): Array<String> {
+        val answer = Answers(
+            name = project.name,
+        )
+        return arrayOf("--overwrite-dir", "--answers",  objectMapper.writeValueAsString(answer))
+    }
 }
