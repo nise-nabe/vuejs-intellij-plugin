@@ -1,4 +1,4 @@
-rootProject.name = "nuxtjs-intellij-plugin"
+rootProject.name = "vuejs-intellij-plugin"
 
 pluginManagement {
     repositories {
