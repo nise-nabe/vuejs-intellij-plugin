@@ -3,9 +3,7 @@
     <name>VueJS</name>
     <vendor email="nise.nabe@gmail.com" url="https://www.nisecoder.com">nise_nabe</vendor>
 
-    <dependencies>
-        <plugin id="JavaScript" />
-    </dependencies>
+    <depends>JavaScript</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <createDirectoryCompletionContributor implementation="com.nisecoder.intellij.vuejs.NuxtJSDirectoryCompletionContributor"/>
