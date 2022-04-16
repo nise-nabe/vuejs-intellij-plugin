@@ -5,7 +5,6 @@ plugins {
     kotlin("jvm")
     id("org.jetbrains.intellij")
     id("org.jetbrains.gradle.plugin.idea-ext")
-    id("com.nisecoder.idea-ext-ext")
 }
 
 group = "com.nisecoder.intellij"
