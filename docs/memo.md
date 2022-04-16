@@ -7,6 +7,7 @@
 
 * add `.vue` extension support
   * [Registering a File Type](https://plugins.jetbrains.com/docs/intellij/registering-file-type.html)
+  * [2. Language and File Type](https://plugins.jetbrains.com/docs/intellij/language-and-filetype.html)
 
 ### JavaScript Framework
 
