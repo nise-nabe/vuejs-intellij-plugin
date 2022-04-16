@@ -23,6 +23,7 @@ idea {
     module {
         settings {
             packagePrefix["src/main/kotlin"] = "com.nisecoder.intellij.vuejs"
+            packagePrefix["src/test/kotlin"] = "com.nisecoder.intellij.vuejs"
         }
     }
 }
