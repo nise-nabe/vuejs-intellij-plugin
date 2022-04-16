@@ -9,6 +9,12 @@
         <createDirectoryCompletionContributor implementation="com.nisecoder.intellij.vuejs.NuxtJSDirectoryCompletionContributor"/>
         <directoryProjectGenerator implementation="com.nisecoder.intellij.vuejs.cli.NuxtJSCliProjectGenerator" />
         <projectTemplatesFactory implementation="com.nisecoder.intellij.vuejs.cli.NuxtJSProjectTemplateFactory" />
+
+        <fileType name="Vue.js"
+                  implementationClass="com.nisecoder.intellij.vuejs.VueFileType"
+                  fieldName="INSTANCE"
+                  language="Vue"
+                  extensions="vue" />
     </extensions>
 
     <actions>
