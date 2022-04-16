@@ -10,6 +10,13 @@ plugins {
 group = "com.nisecoder.intellij"
 version = "1.0-SNAPSHOT"
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
+
 repositories {
     mavenCentral()
 }
