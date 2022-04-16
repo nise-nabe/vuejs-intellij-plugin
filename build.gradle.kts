@@ -35,7 +35,6 @@ intellij {
     plugins.set(listOf(
         "JavaScriptLanguage",
         "JavaScriptDebugger",
-        "org.jetbrains.plugins.vue:212.5284.22"
     ))
 }
 
