@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.nisecoder.intellij.vuejs</id>
-    <name>NuxtJS</name>
+    <name>VueJS</name>
     <vendor email="nise.nabe@gmail.com" url="https://www.nisecoder.com">nise_nabe</vendor>
 
     <dependencies>
