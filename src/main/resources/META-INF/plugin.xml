@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>com.nisecoder.intellij.nuxtjs-intellij-plugin</id>
+    <id>com.nisecoder.intellij.vuejs</id>
     <name>NuxtJS</name>
     <vendor email="nise.nabe@gmail.com" url="https://www.nisecoder.com">nise_nabe</vendor>
 
