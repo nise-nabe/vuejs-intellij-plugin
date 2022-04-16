@@ -9,6 +9,6 @@ class NuxtJSProjectTemplateFactory: ProjectTemplatesFactory() {
     override fun getGroups(): Array<String>
             = arrayOf(WebModuleBuilder.GROUP_NAME)
 
-    override fun createTemplates(group: String?, context: WizardContext?): Array<ProjectTemplate>
+    override fun createTemplates(group: String?, context: WizardContext): Array<ProjectTemplate>
             = arrayOf(NuxtJSCliProjectGenerator())
 }
