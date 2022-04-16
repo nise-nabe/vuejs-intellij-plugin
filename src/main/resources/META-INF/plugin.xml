@@ -8,9 +8,9 @@
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
-        <createDirectoryCompletionContributor implementation="com.nisecoder.intellij.plugins.nuxtjs.NuxtJSDirectoryCompletionContributor"/>
-        <directoryProjectGenerator implementation="com.nisecoder.intellij.plugins.nuxtjs.cli.NuxtJSCliProjectGenerator" />
-        <projectTemplatesFactory implementation="com.nisecoder.intellij.plugins.nuxtjs.cli.NuxtJSProjectTemplateFactory" />
+        <createDirectoryCompletionContributor implementation="com.nisecoder.intellij.vuejs.NuxtJSDirectoryCompletionContributor"/>
+        <directoryProjectGenerator implementation="com.nisecoder.intellij.vuejs.cli.NuxtJSCliProjectGenerator" />
+        <projectTemplatesFactory implementation="com.nisecoder.intellij.vuejs.cli.NuxtJSProjectTemplateFactory" />
     </extensions>
 
     <actions>

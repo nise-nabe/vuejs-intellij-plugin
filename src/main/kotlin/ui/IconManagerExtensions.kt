@@ -1,4 +1,4 @@
-package com.nisecoder.intellij.plugins.nuxtjs.ui
+package com.nisecoder.intellij.vuejs.ui
 
 import com.intellij.ui.IconManager
 import javax.swing.Icon

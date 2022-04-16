@@ -1,4 +1,4 @@
-package com.nisecoder.intellij.plugins.nuxtjs.cli
+package com.nisecoder.intellij.vuejs.cli
 
 import com.intellij.ide.util.projectWizard.WizardContext
 import com.intellij.openapi.module.WebModuleBuilder

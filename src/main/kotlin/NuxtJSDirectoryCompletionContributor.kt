@@ -1,9 +1,9 @@
-package com.nisecoder.intellij.plugins.nuxtjs
+package com.nisecoder.intellij.vuejs
 
 import com.intellij.ide.actions.CreateDirectoryCompletionContributor
 import com.intellij.ide.actions.CreateDirectoryCompletionContributor.Variant
 import com.intellij.psi.PsiDirectory
-import com.nisecoder.intellij.plugins.nuxtjs.jps.NuxtJSRootType
+import com.nisecoder.intellij.vuejs.jps.NuxtJSRootType
 
 class NuxtJSDirectoryCompletionContributor: CreateDirectoryCompletionContributor {
     override fun getDescription(): String {

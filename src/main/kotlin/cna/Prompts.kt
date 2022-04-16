@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.nisecoder.intellij.plugins.nuxtjs.cna
+package com.nisecoder.intellij.vuejs.cna
 
 import com.fasterxml.jackson.annotation.JsonValue
 

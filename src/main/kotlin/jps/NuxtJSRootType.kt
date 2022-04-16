@@ -1,4 +1,4 @@
-package com.nisecoder.intellij.plugins.nuxtjs.jps
+package com.nisecoder.intellij.vuejs.jps
 
 import org.jetbrains.jps.model.JpsDummyElement
 import org.jetbrains.jps.model.ex.JpsElementTypeWithDummyProperties

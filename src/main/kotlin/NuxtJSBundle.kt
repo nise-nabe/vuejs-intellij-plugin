@@ -1,4 +1,4 @@
-package com.nisecoder.intellij.plugins.nuxtjs
+package com.nisecoder.intellij.vuejs
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.Nls
